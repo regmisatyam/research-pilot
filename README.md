@@ -1,10 +1,10 @@
-# Mac mini worker–critic research pilot
+# Research pilot
 
 This controller alternates separate OpenHands worker and critic conversations
-using your remote llm1 endpoint. A host Python supervisor owns retries, the fixed
+using cstem remote llm1 endpoint. A host Python supervisor owns retries, the fixed
 deadline and logs. Agents run in Docker; only study directories are mounted.
 The critic gets a read-only evidence snapshot. Both roles use the same model,
-so their agreement is not independent validation. This is not full Mac GUI access.
+so their agreement is not independent validation.
 
 ## Prerequisites on the Mac mini
 
