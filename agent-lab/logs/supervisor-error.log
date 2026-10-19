@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/csra/research-pilot/research_supervisor.py", line 211, in supervise
+    raise RuntimeError(f"Session exit {child.returncode}:\n{tail}")
+RuntimeError: Session exit 1:
+Traceback (most recent call last):
+  File "/Users/csra/research-pilot/research_supervisor.py", line 324, in <module>
+    main()
+  File "/Users/csra/research-pilot/research_supervisor.py", line 278, in main
+    session(read_state(), args.session)
+  File "/Users/csra/research-pilot/research_supervisor.py", line 89, in session
+    from pydantic import SecretStr
+ModuleNotFoundError: No module named 'pydantic'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/csra/research-pilot/research_supervisor.py", line 324, in <module>
+    main()
+  File "/Users/csra/research-pilot/research_supervisor.py", line 320, in main
+    supervise()
+  File "/Users/csra/research-pilot/research_supervisor.py", line 226, in supervise
+    wait_interruptibly(delay, state)
+  File "/Users/csra/research-pilot/research_supervisor.py", line 63, in wait_interruptibly
+    time.sleep(min(1, max(0, until - time.time())))
+  File "/Users/csra/research-pilot/research_supervisor.py", line 257, in terminate
+    raise KeyboardInterrupt("Termination requested")
+KeyboardInterrupt: Termination requested

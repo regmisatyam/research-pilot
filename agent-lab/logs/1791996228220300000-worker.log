@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/csra/research-pilot/research_supervisor.py", line 324, in <module>
+    main()
+  File "/Users/csra/research-pilot/research_supervisor.py", line 278, in main
+    session(read_state(), args.session)
+  File "/Users/csra/research-pilot/research_supervisor.py", line 89, in session
+    from pydantic import SecretStr
+ModuleNotFoundError: No module named 'pydantic'

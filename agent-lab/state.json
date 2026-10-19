@@ -1,0 +1,14 @@
+{
+  "started": 1791996211.0204082,
+  "deadline": 1792010611.0204082,
+  "phase": "critic",
+  "cycle": 1,
+  "failures": 19,
+  "status": "deadline_reached",
+  "base_url": "http://172.40.1.35/ai/v1",
+  "model": "llm1",
+  "image": "ghcr.io/openhands/agent-server@sha256:d207dd73271fa2e900b7e9e444ca6751e241f978191b6887346aca00695db08c",
+  "attempt": "1792010452811344000-critic",
+  "last_error": "Session stopped: deadline, stop flag, or 30-minute turn limit",
+  "snapshot": "/Users/csra/research-pilot/agent-lab/snapshots/1792002388122447000-worker"
+}
